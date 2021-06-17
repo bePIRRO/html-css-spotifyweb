@@ -18,20 +18,17 @@ header .head-bar{
 .head-bar {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100px;
+    width: 100%;
     z-index: 1;
 }
 
-.sidebar {
-    height: calc(100vh - 100px);
+[class*="sidebar"] {
+    height: 100%;
     background-color: #000;
     position: fixed;
     z-index: 50;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-div .col-1 {
-    /* width: 50px; */
 }
 
 
@@ -44,8 +41,32 @@ main .container-fluid {
 /* footer */
 .player-bar{
     height: 100px;
+    width: 100%;
     background-color: #282828;
     position: fixed;
     bottom: 0;
     z-index: 100;
+}
+
+/* media */
+@media screen and (max-width: 576px) {
+    .sidebar-sm {
+        width: 50px;
+    }
+
+    div .sidebar-sm::after {
+        content: url(../img/logo-small.svg);
+
+    }
+
+}
+
+@media screen and (min-width: 577px) {
+    .sidebar-lg {
+        width: 230px;
+    }
+
+    div .sidebar-lg::after {
+        content: url(../img/logo.svg);
+    }
 }
