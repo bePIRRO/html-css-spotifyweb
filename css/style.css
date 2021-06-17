@@ -18,7 +18,7 @@ body {
 }
 
 
-/* header */
+/* HEADER */
 header {
     display: flex;
 }
@@ -36,9 +36,10 @@ header .head-bar{
     z-index: 1;
 }
 
+/* sidebar */
 [class*="sidebar"] {
     height: 100%;
-    background-color: #000;
+    background-color: #222;
     position: fixed;
     z-index: 50;
     flex-direction: column;
@@ -46,8 +47,16 @@ header .head-bar{
     
 }
 
+.left-nav li {
+    list-style-type: none;
+}
 
-/* main */
+.left-nav img {
+    width: 35px;
+}
+
+
+/* MAIN */
 main .container-fluid {
     overflow-y: auto;
 }
@@ -69,8 +78,8 @@ main .container-fluid {
         width: 50px;
         padding: 5px;
     }
-
-    div .sidebar-sm::after {
+    
+    div #logo::after {
         content: url(../img/logo-small.svg);
     }
 
@@ -81,8 +90,8 @@ main .container-fluid {
         width: 230px;
         padding: 10px;
     }
-
-    div .sidebar-lg::after {
+    
+    div #logo::after {
         content: url(../img/logo.svg);
     }
 }
