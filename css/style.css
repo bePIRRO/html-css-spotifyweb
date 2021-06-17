@@ -29,6 +29,7 @@ header .head-bar{
     z-index: 50;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 
 
@@ -52,11 +53,11 @@ main .container-fluid {
 @media screen and (max-width: 576px) {
     .sidebar-sm {
         width: 50px;
+        padding: 5px;
     }
 
     div .sidebar-sm::after {
         content: url(../img/logo-small.svg);
-
     }
 
 }
@@ -64,6 +65,7 @@ main .container-fluid {
 @media screen and (min-width: 577px) {
     .sidebar-lg {
         width: 230px;
+        padding: 10px;
     }
 
     div .sidebar-lg::after {
