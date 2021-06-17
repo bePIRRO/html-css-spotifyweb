@@ -5,6 +5,18 @@ body {
     min-width: 576px;
 }
 
+.btn{
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.btnwhite {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 
 /* header */
 header {
@@ -18,7 +30,9 @@ header .head-bar{
 .head-bar {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100px;
+    line-height: 100px;
     width: 100%;
+    padding-right: 10px;
     z-index: 1;
 }
 
