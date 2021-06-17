@@ -6,21 +6,38 @@
     z-index: 100;
 }
 
+header {
+    display: flex;
+
+}
+
+header .head-bar{
+    justify-content: flex-end;
+}
+
 .head-bar {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
-    
+    z-index: 1;
 }
 
 .sidebar {
-    height: 100vh;
+    height: calc(100vh - 100px);
     background-color: #000;
     position: fixed;
-    width: 50px;
+    /* width: 50px; */
     z-index: 50;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 body {
     color: #fff;
     background-color: darkblue;
+}
+
+
+.test {
+    display: flex;
+    justify-content: flex-end;
 }
