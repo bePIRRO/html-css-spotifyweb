@@ -1,14 +1,14 @@
-.player-bar{
-    height: 100px;
-    background-color: #222;
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
+/* utils */
+body {
+    color: #808080;
+    background-color: #141922;
+    min-width: 576px;
 }
 
+
+/* header */
 header {
     display: flex;
-
 }
 
 header .head-bar{
@@ -16,7 +16,7 @@ header .head-bar{
 }
 
 .head-bar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 100px;
     z-index: 1;
 }
@@ -25,19 +25,27 @@ header .head-bar{
     height: calc(100vh - 100px);
     background-color: #000;
     position: fixed;
-    /* width: 50px; */
     z-index: 50;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-body {
-    color: #fff;
-    background-color: darkblue;
+div .col-1 {
+    /* width: 50px; */
 }
 
 
-.test {
-    display: flex;
-    justify-content: flex-end;
+/* main */
+main .container-fluid {
+    overflow-y: auto;
+}
+
+
+/* footer */
+.player-bar{
+    height: 100px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
 }
