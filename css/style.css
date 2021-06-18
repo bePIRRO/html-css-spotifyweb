@@ -206,6 +206,7 @@ main {
     flex-direction: column;
     align-items: center;
     color: #fff;
+
 }
 
 .player li {
@@ -213,11 +214,13 @@ main {
     margin: 20px 10px 10px 10px;
 }
 
-.fa-play {
-    padding: 5px 6px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+.player .fas {
+    vertical-align: text-top;
 }
+
+.fa-play-circle {
+    font-size: 30px;
+} 
 
 .player-time {
     justify-content: center;
@@ -341,7 +344,14 @@ li:hover {
     opacity: 100%;
 }
 
-.btn,
-.btnwhite:hover {
+.btn, .btnwhite:hover {
     transform: scale(1.2);
+}
+
+/* img:before {
+    content: "\f144";
+} */
+
+.imgbox, img:hover {
+    cursor: pointer;
 }
