@@ -1,10 +1,7 @@
 /* utils */
 body {
     color: #808080;
-    background-color: #141922;
-    min-width: 576px;
 }
-
 .btn{
     text-decoration: none;
     transition: 0.5s;
@@ -32,32 +29,48 @@ header .head-bar{
     height: 100px;
     line-height: 100px;
     width: 100%;
-    padding-right: 10px;
+    padding-right: 15px;
     z-index: 1;
+    position: fixed;
 }
+
+
+.wrapper {
+    height: calc(100vh - 100px);
+}
+
 
 /* sidebar */
 [class*="sidebar"] {
     height: 100%;
     background-color: #222;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 50;
-    flex-direction: column;
-    justify-content: flex-start;
-    
+}
+
+.left-nav ul {
+    margin-top: 20px;
 }
 
 .left-nav li {
     list-style-type: none;
+    margin: 15px 0;
+    padding-left: 15px;
 }
 
 .left-nav img {
-    width: 35px;
+    width: 20px;
+    filter: invert(0.2);
 }
 
-
 /* MAIN */
-main .container-fluid {
+main {
+    background-color: #141922;
+    height: 100%;
+    margin-left: 50px;
+    padding-top: 100px;
     overflow-y: auto;
 }
 
@@ -76,7 +89,11 @@ main .container-fluid {
 @media screen and (max-width: 576px) {
     .sidebar-sm {
         width: 50px;
-        padding: 5px;
+        /* padding: 5px; */
+    }
+
+    div .logotest {
+        padding: 10px;
     }
     
     div #logo::after {
@@ -88,10 +105,24 @@ main .container-fluid {
 @media screen and (min-width: 577px) {
     .sidebar-lg {
         width: 230px;
-        padding: 10px;
     }
     
     div #logo::after {
         content: url(../img/logo.svg);
+    }
+    
+    div .logotest {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 70px;
+    }
+
+    #home {
+        border-left: 3px solid #adff2f;
+        padding-left: 12px;
+    }
+
+    main {
+        margin-left: 230px;
     }
 }
