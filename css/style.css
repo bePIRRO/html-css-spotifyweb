@@ -1,6 +1,9 @@
 /* utils */
 body {
     color: #808080;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
 }
 .btn{
     text-decoration: none;
@@ -72,6 +75,18 @@ main {
     margin-left: 50px;
     padding-top: 100px;
     overflow-y: auto;
+}
+
+span {
+    border-bottom: 2px solid #adff2f;
+    padding-bottom: 2px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 10px;
 }
 
 
