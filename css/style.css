@@ -59,6 +59,7 @@ header .head-bar{
     top: 0;
     left: 0;
     z-index: 50;
+    width: 50px;
 }
 
 
@@ -141,6 +142,22 @@ span {
     padding: 0 10px;
 }
 
+.songs {
+    margin: 30px 10px;
+}
+
+.imgbox,
+.imgbox img {
+    width: 150px;
+}
+
+.imgbox {
+    margin: 20px 10px;
+}
+
+.imgbox h3 {
+    margin: 10px 0;
+}
 
 /* footer */
 .player-bar{
@@ -155,8 +172,6 @@ span {
 /* media */
 @media screen and (max-width: 576px) {
     .sidebar-sm {
-        width: 50px;
-        /* padding: 5px; */
     }
 
     div .logotest {
