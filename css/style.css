@@ -173,7 +173,7 @@ main {
 /* footer */
 .player-bar{
     height: 100px;
-    width: 100%;
+    flex-basis: calc(100% / 12 * 12);
     background-color: #282828;
     position: fixed;
     bottom: 0;
@@ -230,18 +230,41 @@ main {
     
 }
 
-.time-bar {
+.bar {
     border-radius: 30px;
     height: 4px;
     width: 35%;
-    background-color: #808080;
+    background-color: #5a5a5a;
+}
+
+.bar-passed {
+    border-radius: 30px;
+    height: 4px;
+    width: 10%;
+    background-color: #c1c1c1;
 }
 
 
+/* VOLUME */
+
+.volume{
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.volume li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.volume .bar {
+    width: 20%;
+}
+
 /* media */
 @media screen and (max-width: 576px) {
-    .sidebar-sm {
-    }
 
     div .logotest {
         padding: 10px;
@@ -316,4 +339,9 @@ li:hover {
 
 #home:hover {
     opacity: 100%;
+}
+
+.btn,
+.btnwhite:hover {
+    transform: scale(1.2);
 }
