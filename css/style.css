@@ -142,7 +142,8 @@ span {
     padding: 0 10px;
 }
 
-.songs {
+.songs,
+.artist {
     margin: 30px 10px;
 }
 
@@ -157,6 +158,10 @@ span {
 
 .imgbox h3 {
     margin: 10px 0;
+}
+
+.artist img{
+    border-radius: 50%;
 }
 
 /* footer */
