@@ -331,7 +331,7 @@
 }
 
 /* medium screen */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
     .col-md {
         flex-grow: 1;
     }
