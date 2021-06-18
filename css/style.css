@@ -17,6 +17,14 @@ body {
     border: 1px solid #fff;
 }
 
+h2, h3 {
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
 
 /* HEADER */
 header {
@@ -46,27 +54,44 @@ header .head-bar{
 /* sidebar */
 [class*="sidebar"] {
     height: 100%;
-    background-color: #222;
+    background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 50;
 }
 
+
 .left-nav ul {
     margin-top: 20px;
 }
 
 .left-nav li {
-    list-style-type: none;
     margin: 15px 0;
     padding-left: 15px;
 }
 
 .left-nav img {
     width: 20px;
-    filter: invert(0.2);
+    /* filter: invert(0.2); */
+    opacity: 80%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
+
+.playlist {
+    padding:10px 20px;
+}
+
+.playlist li {
+    padding: 5px 0;
+}
+
+.fa-plus-square {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
 
 /* MAIN */
 main {
@@ -83,7 +108,6 @@ span {
 }
 
 .menu li {
-    list-style-type: none;
     display: inline-block;
     margin-top: 20px;
     padding: 0 10px;
@@ -115,6 +139,10 @@ span {
         content: url(../img/logo-small.svg);
     }
 
+    div .playlist {
+        visibility: hidden;
+    }
+
 }
 
 @media screen and (min-width: 577px) {
@@ -137,7 +165,23 @@ span {
         padding-left: 12px;
     }
 
+    #home::after {
+        content: "Home";
+        vertical-align: middle;
+    }
+
     main {
         margin-left: 230px;
     }
+}
+
+
+/* HOVER */
+li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+#home:hover {
+    opacity: 100%;
 }
