@@ -18,7 +18,7 @@ body {
     border: 1px solid #fff;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: #fff;
 }
 
@@ -101,6 +101,10 @@ header .head-bar{
     margin:10px 13px;
 }
 
+.side-bar-foot li{
+    display: inline-block;
+}
+
 .fa-arrow-down {
     border: 2px solid #808080;
     border-radius: 50%;
@@ -132,7 +136,7 @@ main {
     overflow-y: auto;
 }
 
-span {
+.underline {
     border-bottom: 2px solid #adff2f;
     padding-bottom: 2px;
 }
@@ -165,6 +169,7 @@ span {
     border-radius: 50%;
 }
 
+
 /* footer */
 .player-bar{
     height: 100px;
@@ -173,7 +178,27 @@ span {
     position: fixed;
     bottom: 0;
     z-index: 100;
+    
 }
+
+.track-img {
+    align-items: center;
+}
+
+.track-img img {
+    margin: 0 15px;
+    width: 50px;
+}
+
+.track-name {
+    color: #fff;
+    font-size: 16px;
+}
+
+.track-img ul {
+    margin-left: 30px;
+}
+
 
 /* media */
 @media screen and (max-width: 576px) {
@@ -194,6 +219,10 @@ span {
 
     hr {
         visibility: hidden
+    }
+
+    .download {
+        visibility: hidden;
     }
 }
 
@@ -230,9 +259,9 @@ span {
         margin:10px 20px;
     }
 
-    .download::after {
+    /* .download::after {
         content: "Download";
-    }
+    } */
 
     .profile::after {
         content: "John Doe";
