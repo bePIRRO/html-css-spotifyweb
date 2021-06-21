@@ -255,7 +255,7 @@ main {
     background-color: #fff;
     position: relative;
     left: 10%;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /* VOLUME */
@@ -368,9 +368,9 @@ li:hover {
     transform: scale(1.2);
 }
 
-/* img:before {
+img:before {
     content: "\f144";
-} */
+}
 
 .imgbox, img:hover {
     cursor: pointer;
@@ -385,4 +385,8 @@ h6:hover {
 .bar-point:hover {
     cursor: pointer;
     opacity: 100%;
+}
+
+.imgbox:hover > img {
+    filter: brightness(60%);
 }
