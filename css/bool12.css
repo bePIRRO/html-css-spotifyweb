@@ -83,9 +83,19 @@
     max-width: calc(100% / 12 * 5);
 }
 
+.col-4.5 {
+    width: calc(100% / 12 * 4.5);
+    max-width: calc(100% / 12 * 4.5);
+}
+
 .col-4 {
     width: calc(100% / 12 * 4);
     max-width: calc(100% / 12 * 4);
+}
+
+.col-3.5 {
+    width: calc(100% / 12 * 3.5);
+    max-width: calc(100% / 12 * 3.5);
 }
 
 .col-3 {

@@ -178,7 +178,7 @@ main {
     position: fixed;
     bottom: 0;
     z-index: 100;
-    
+    justify-content: space-between;
 }
 
 /* TRACK INFO */
@@ -382,7 +382,7 @@ h6:hover {
     cursor: pointer;
 }
 
-.bar + .bar-point:hover {
+.bar-point:hover {
     cursor: pointer;
     opacity: 100%;
 }
