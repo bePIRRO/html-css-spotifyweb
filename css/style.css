@@ -245,8 +245,18 @@ main {
     height: 4px;
     width: 10%;
     background-color: #c1c1c1;
+    
 }
 
+.bar-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: 10%;
+    opacity: 0;
+}
 
 /* VOLUME */
 
@@ -315,6 +325,16 @@ main {
         vertical-align: middle;
     }
 
+    #search::after {
+        content: "Cerca";
+        vertical-align: middle;
+    }
+
+    #library::after {
+        content: "La tua libreria";
+        vertical-align: middle;
+    }
+
     main {
         margin-left: 230px;
     }
@@ -354,4 +374,15 @@ li:hover {
 
 .imgbox, img:hover {
     cursor: pointer;
+}
+
+h6:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bar + .bar-point:hover {
+    cursor: pointer;
+    opacity: 100%;
 }
