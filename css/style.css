@@ -30,6 +30,14 @@ li {
     cursor: pointer;
 }
 
+*::before {
+    font-family: "font awesome 5 free";
+}
+
+*::after {
+    font-family: "font awesome 5 free";
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -156,6 +164,10 @@ main {
     margin: 30px 10px;
 }
 
+figure {
+    position: relative;
+}
+
 .imgbox,
 .imgbox img {
     width: 150px;
@@ -175,7 +187,7 @@ main {
 
 
 /* footer */
-.player-bar{
+.player-block{
     height: 100px;
     flex-basis: calc(100% / 12 * 12);
     background-color: #282828;
@@ -382,27 +394,23 @@ li:hover {
     cursor: pointer;
 }
 
-.imgbox:hover > img {
+.imgbox:hover img {
     filter: brightness(60%);
 }
 
-.imgbox:hover > img::after {
-    content: \f144;
-    color: #fff;
-    position: relative;
+.imgbox:hover figure::after {
+    content: '\f144';
+    position:absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    z-index: 40;
 }
 
 
 /* footer */
-*::before {
-    font-family: "font awesome 5 free";
-}
-
-*::after {
-    font-family: "font awesome 5 free";
-}
-
 h6:hover {
     color: #fff;
     text-decoration: underline;
@@ -416,31 +424,12 @@ h6:hover {
     transform: scale(1.1);
 }
 
-.bar-bg:hover ~ .bar-passed {
+.bar-bg:hover .bar-passed{
     background-color: #adff2f;
+    cursor: pointer;
 }
 
 .imgbox .fa-play-circle {
     display: none;
     
-}
-
-/* .imgbox:hover > .fa-play-circle {
-    display: inline;
-    position: static;
-    top: 35%;
-    left: 23%;
-    font-size: 40px;
-    color: #fff;
-    z-index: 40;
-} */
-
-.imgbox:hover::before {
-    content: '\f144';
-    position:;
-    top: 50%;
-    left: 50%;
-    font-size: 40px;
-    color: #fff;
-    z-index: 40;
 }
