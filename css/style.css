@@ -254,25 +254,25 @@ figure {
     height: 4px;
     width: 35%;
     background-color: #5a5a5a;
+    position: relative;
 }
 
 .bar-passed {
     border-radius: 30px;
     height: 4px;
-    width: 10%;
+    width: 32%;
     background-color: #c1c1c1;
-    
+    position: absolute;
 }
 
-.bar-point {
+/* .bar-point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
-    position: relative;
+    position: absolute;
     left: 10%;
-    /* opacity: 0; */
-}
+} */
 
 /* VOLUME */
 
@@ -433,3 +433,4 @@ h6:hover {
     display: none;
     
 }
+
