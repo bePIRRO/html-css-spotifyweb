@@ -98,6 +98,7 @@ header .head-bar{
 
 .playlist li {
     padding: 5px 0;
+    overflow-y: auto;
 }
 
 .fa-plus-square {
@@ -262,17 +263,21 @@ figure {
     height: 4px;
     width: 32%;
     background-color: #c1c1c1;
-    position: absolute;
+    position: relative;
 }
 
-/* .bar-point {
+.bar-point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    left: 10%;
-} */
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    visibility: hidden;
+}
 
 /* VOLUME */
 
@@ -427,6 +432,10 @@ h6:hover {
 .bar-bg:hover .bar-passed{
     background-color: #adff2f;
     cursor: pointer;
+}
+
+.bar-bg:hover .bar-point {
+    visibility: visible;
 }
 
 .imgbox .fa-play-circle {
