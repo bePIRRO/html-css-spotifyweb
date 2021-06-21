@@ -75,10 +75,10 @@ header .head-bar{
 
 .left-nav img {
     width: 20px;
-    /* filter: invert(0.2); */
     opacity: 80%;
     margin-right: 10px;
     vertical-align: middle;
+    filter: brightness(80%);
 }
 
 .playlist {
@@ -315,7 +315,7 @@ main {
         padding-right: 70px;
     }
 
-    #home {
+    .left-nav li:hover {
         border-left: 3px solid #adff2f;
         padding-left: 12px;
     }
@@ -360,8 +360,8 @@ li:hover {
     cursor: pointer;
 }
 
-#home:hover {
-    opacity: 100%;
+.left-nav li:hover > img {
+    filter: brightness(100%);
 }
 
 .btn, .btnwhite:hover {
@@ -389,4 +389,9 @@ h6:hover {
 
 .imgbox:hover > img {
     filter: brightness(60%);
+}
+
+.imgbox:hover > img::after {
+    content: "\f144";
+    color: #fff;
 }
