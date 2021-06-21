@@ -26,6 +26,9 @@ li {
     list-style-type: none;
 }
 
+.pointer {
+    cursor: pointer;
+}
 
 /* HEADER */
 header {
@@ -139,6 +142,7 @@ main {
 .underline {
     border-bottom: 2px solid #adff2f;
     padding-bottom: 2px;
+
 }
 
 .menu li {
@@ -233,7 +237,7 @@ main {
     
 }
 
-.bar {
+.bar-bg {
     border-radius: 30px;
     height: 4px;
     width: 35%;
@@ -272,7 +276,7 @@ main {
     margin-right: 10px;
 }
 
-.volume .bar {
+.volume .bar-bg {
     width: 20%;
 }
 
@@ -355,6 +359,14 @@ main {
 
 
 /* HOVER */
+
+/* header */
+.btn:hover {
+    box-shadow: 0px 0px 3px #fff;
+    font-size: 16px;
+}
+
+/* nav */
 li:hover {
     color: #fff;
     cursor: pointer;
@@ -364,27 +376,10 @@ li:hover {
     filter: brightness(100%);
 }
 
-.btn, .btnwhite:hover {
-    transform: scale(1.2);
-}
 
-img:before {
-    content: "\f144";
-}
-
-.imgbox, img:hover {
+/* main */
+.imgbox {
     cursor: pointer;
-}
-
-h6:hover {
-    color: #fff;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.bar-point:hover {
-    cursor: pointer;
-    opacity: 100%;
 }
 
 .imgbox:hover > img {
@@ -392,6 +387,60 @@ h6:hover {
 }
 
 .imgbox:hover > img::after {
-    content: "\f144";
+    content: \f144;
     color: #fff;
+    position: relative;
+    top: 50%;
+}
+
+
+/* footer */
+*::before {
+    font-family: "font awesome 5 free";
+}
+
+*::after {
+    font-family: "font awesome 5 free";
+}
+
+h6:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.fas:hover {
+    transform: scale(1.2);
+}
+
+.far:hover {
+    transform: scale(1.1);
+}
+
+.bar-bg:hover ~ .bar-passed {
+    background-color: #adff2f;
+}
+
+.imgbox .fa-play-circle {
+    display: none;
+    
+}
+
+/* .imgbox:hover > .fa-play-circle {
+    display: inline;
+    position: static;
+    top: 35%;
+    left: 23%;
+    font-size: 40px;
+    color: #fff;
+    z-index: 40;
+} */
+
+.imgbox:hover::before {
+    content: '\f144';
+    position:;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: #fff;
+    z-index: 40;
 }
