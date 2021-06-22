@@ -72,6 +72,7 @@ header .head-bar{
     left: 0;
     z-index: 50;
     width: 50px;
+    min-height: 550px;
 }
 
 
